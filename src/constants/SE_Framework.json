@@ -1,0 +1,42 @@
+{
+	"name": "Software Engineering Framework",
+	"topics": [{
+			"name": "Testing",
+			"questions": [{
+				"text": "What would you describe your level of automated testing?",
+				"answers": [{
+						"text": "I can hold it",
+						"level": 1
+					},
+					{
+						"text": "I can boss it",
+						"level": 2
+					},
+					{
+						"text": "I nail it",
+						"level": 3
+					}
+				]
+			}]
+		},
+		{
+			"name": "Communication",
+			"questions": [{
+				"text": "How well do I communicate with the team?",
+				"answers": [{
+						"text": "People listen to me",
+						"level": 1
+					},
+					{
+						"text": "People hear me",
+						"level": 2
+					},
+					{
+						"text": "People understand me",
+						"level": 3
+					}
+				]
+			}]
+		}
+	]
+}

@@ -3,19 +3,17 @@
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  height: 200px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.esgbook-logo{
+  width: 200px;
 }
+
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+  box-shadow: (0, 4px, 8px, "#488d7f3");
   display: flex;
   flex-direction: column;
   align-items: center;
