@@ -7,7 +7,7 @@ export default function FrameworkSelectionBox(props) {
   return (
     <div>
         <h1 style={{color: "blue", fontSize: "12px"}}>
-            <a href={"/questions?" + props.framework_name }>
+            <a href={"/questions?framework_id=" + props.framework_id }>
                 {props.framework_name}
             </a>
         </h1>

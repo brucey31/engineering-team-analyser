@@ -1,4 +1,5 @@
 {
+	"id": "5197ea9b-8ea2-4566-a0b0-c026d50b2436",
 	"name": "Engineering Manager Framework",
 	"topics": [{
 			"name": "Testing",
@@ -14,6 +15,22 @@
 					},
 					{
 						"text": "I nail it",
+						"level": 3
+					}
+				]
+			},
+			{
+				"text": "What type of regression testing do you do - EM?",
+				"answers": [{
+						"text": "None",
+						"level": 1
+					},
+					{
+						"text": "Small ones",
+						"level": 2
+					},
+					{
+						"text": "Huge ones",
 						"level": 3
 					}
 				]

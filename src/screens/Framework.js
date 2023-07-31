@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from 'react';
-
 import FrameworkSelectionBox from "../components/FrameworkSelectionBox"
-
 import '../style/App.css';
-
 
 function get_frameworks(effectFunction){
     const context = require.context('../constants', true, /.json$/);
@@ -29,7 +26,7 @@ export default function Frameworks() {
       {
         frameworks.map(function(d, idx){
             return (
-                <FrameworkSelectionBox framework_name={d.name} />
+                <FrameworkSelectionBox framework_name={d.name} framework_id={d.id} />
             )
         })
        }
