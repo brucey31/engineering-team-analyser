@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import '../style/App.css';
 
 import Slider from '@mui/material/Slider';
@@ -17,8 +17,13 @@ function valuetext(index, answers, effectFunction) {
 export default function QuestionComponent(props) { 
     const starting_point = 2
     const [questionValue, setQuestionValue] = useState(starting_point);
+
+    function button_press(){
+      props.score_callback(props.topic, questionValue)
+      props.question_callback(props.questionIndex)
+    }
     
-    if (props.currentQuestionIndex == props.index){
+    if (props.questionIndex === props.index){
         return (
             <div>
               <p>{props.text}</p>
@@ -35,7 +40,7 @@ export default function QuestionComponent(props) {
               <Button 
                 variant="contained"
                 onClick={() => {
-                    props.callback(props.topic, questionValue)
+                  button_press()
                   }}
               >
                 Choose

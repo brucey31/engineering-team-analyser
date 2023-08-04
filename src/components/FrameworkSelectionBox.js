@@ -1,16 +1,17 @@
-import React, { useState, useEffect } from 'react';
+import Button from '@mui/material/Button';
 import '../style/App.css';
 
 export default function FrameworkSelectionBox(props) {    
-
-
   return (
-    <div>
-        <h1 style={{color: "blue", fontSize: "12px"}}>
-            <a href={"/questions?framework_id=" + props.framework_id }>
-                {props.framework_name}
-            </a>
-        </h1>
+    <div className="button_selector">
+      <Button 
+        variant="contained"
+        onClick={() => {
+            props.framework_selection_callback(props.framework_id, props.entered_name)
+          }}
+      >
+        {props.framework_name}
+      </Button>
     </div>
   );
 }

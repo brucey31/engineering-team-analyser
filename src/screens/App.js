@@ -10,7 +10,6 @@ function App() {
     <div className="App">
       <header className="App-header">
 
-
       <img src="https://app.esgbook.com/assets/logos/esgbook_logo.png" alt="logo" className="esgbook-logo" />
         <p>
           Hello there
