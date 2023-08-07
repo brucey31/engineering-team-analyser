@@ -1,25 +1,16 @@
 import React, { useState } from 'react';
 import '../style/App.css';
 
-import Slider from '@mui/material/Slider';
-import Button from '@mui/material/Button';
+import QuestionSliderComponent from "./QuestionSliderComponent"
+import ButtonComponent from './ButtonComponent';
 
-function valuetext(index, answers, effectFunction) {
-  if(index -1 > answers.length){
-    return "N/A"
-  }
-  else{
-    effectFunction(index)
-    return answers[index-1].text
-  }
-}
 
 export default function QuestionComponent(props) { 
     const starting_point = 2
     const [questionValue, setQuestionValue] = useState(starting_point);
 
     function button_press(){
-      props.score_callback(props.topic, questionValue)
+      props.score_callback(props.topic, questionValue, props.name, props.framework_id)
       props.question_callback(props.questionIndex)
     }
     
@@ -27,24 +18,15 @@ export default function QuestionComponent(props) {
         return (
             <div>
               <p>{props.text}</p>
-              <Slider
-                defaultValue={starting_point}
-                valueLabelFormat={value => valuetext(value, props.answers, setQuestionValue)}
-                aria-hidden="false"
-                valueLabelDisplay="on"
-                step={1}
-                min={1}
-                max={props.answers.length}
-                marks
+              <QuestionSliderComponent
+                starting_point={starting_point}
+                answers={props.answers}
+                effectFunction={setQuestionValue}
               />
-              <Button 
-                variant="contained"
-                onClick={() => {
-                  button_press()
-                  }}
-              >
-                Choose
-              </Button>
+              <ButtonComponent
+                onClick={button_press}
+                text={"Choose"}
+              />
             </div>
           );  
     }

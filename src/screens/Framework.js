@@ -1,20 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from "react-router-dom"
-import FrameworkSelectionBox from "../components/FrameworkSelectionBox"
+
 import TextField from '@mui/material/TextField';
 import '../style/App.css';
 
-function get_frameworks(effectFunction){
-    const context = require.context('../constants', true, /.json$/);
-    const all = [];
-    context.keys().forEach((key) => {
-        const fileName = key.replace('./', '');
-        const resource = require(`../constants/${fileName}`);
-        all.push(JSON.parse(JSON.stringify(resource)));
-    
-    });
-    effectFunction(all)
-}
+import FrameworkSelectionBox from "../components/FrameworkSelectionBox"
+import {get_frameworks} from "../controllers/FrameworkController"
+
 
 export default function Frameworks() {
     const navigate = useNavigate();

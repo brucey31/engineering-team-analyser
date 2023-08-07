@@ -31,6 +31,8 @@ export default function TopicQuestionComponent(props) {
                 questionIndex={questionIndex}
                 answers={d.answers}
                 text={d.text}
+                name={props.name}
+                framework_id={props.TopicQuestionComponentframeworkID}
                 score_callback={props.score_callback}
                 question_callback={next_question}
               />

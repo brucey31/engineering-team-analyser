@@ -38,6 +38,39 @@
 					}
 				]
 			}]
+		},
+		{
+			"name": "PR skills",
+			"questions": [{
+				"text": "How good is the feedback I give in peer reviews? _EM1",
+				"answers": [{
+						"text": "Not bad",
+						"level": 1
+					},
+					{
+						"text": "Good",
+						"level": 2
+					},
+					{
+						"text": "Fantastic",
+						"level": 3
+					}
+				]
+			}]
+		}
+	],
+	"levels": [
+		{
+			"level_name": "SE I",
+			"mean_score": 1
+		},
+		{
+			"level_name": "SE II",
+			"mean_score": 2
+		},
+		{
+			"level_name": "SE III",
+			"mean_score": 3
 		}
 	]
 }

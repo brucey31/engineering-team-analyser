@@ -9,21 +9,19 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-
-      <img src="https://app.esgbook.com/assets/logos/esgbook_logo.png" alt="logo" className="esgbook-logo" />
-        <p>
-          Hello there
-        </p>
-
+        <img src="https://app.esgbook.com/assets/logos/esgbook_logo.png" alt="logo" className="esgbook-logo" />
       </header>
 
-      <Router>
-        <Routes>
-          <Route path="/" element={<Frameworks />} />
-          <Route path="/questions" element={<Question />} />
-          <Route path="/results" element={<Result />} />
-        </Routes>
-      </Router>
+      <div className="main_body">
+        <Router>
+          <Routes>
+            <Route path="/" element={<Frameworks />} />
+            <Route path="/frameworks" element={<Frameworks />} />
+            <Route path="/questions" element={<Question />} />
+            <Route path="/results" element={<Result />} />
+          </Routes>
+        </Router>
+      </div>
     </div>
   );
 }
