@@ -6,8 +6,9 @@ export default function LevelSuggestedionsImprovementsComponent(props) {
   
   if(props.results !== {} & props.results.strength_topics !== undefined){
     return (
-        <div>
-            <h2>{props.results.name}, you are currently {props.results.current_level}</h2>
+        <div className="level_suggestions_container">
+            <h2>{props.results.name}, your current level is:</h2>
+            <h3>{props.results.current_level}</h3>
             {
                 props.results.strength_topics.length > 0 ? <h4>Places you are doing well</h4> : null
             }

@@ -2,58 +2,259 @@
 	"id": "5197ea9b-8ea2-4566-a0b0-c026d50b2436",
 	"name": "Engineering Manager Framework",
 	"topics": [{
-			"name": "Testing",
+			"name": "Incremental value delivery",
 			"questions": [{
-				"text": "What would you describe your level of automated testing - EM?",
+				"text": "Work breakdown",
 				"answers": [{
-						"text": "I can hold it",
+						"text": "Reviews epics and projects critically and ensures they’re appropriately broken down and prioritised, and well understood by the team.",
 						"level": 1
 					},
 					{
-						"text": "I can boss it",
+						"text": "Reviews cross-team work critically and ensures it’s appropriately broken down and prioritised, and well understood by all involved teams.",
 						"level": 2
 					},
 					{
-						"text": "I nail it",
+						"text": "Reviews organization-wide work critically and ensures it’s appropriately broken down and prioritised across the organization.",
 						"level": 3
 					}
 				]
 			},
 			{
-				"text": "What type of regression testing do you do - EM?",
+				"text": "Prioritisation, dependencies",
 				"answers": [{
-						"text": "None",
+						"text": "Ensures dependencies are noted and well understood by the team, at both the task and epic level. Works within their team to foster a culture of priority setting and urgency in alignment with organizational strategy.",
 						"level": 1
 					},
 					{
-						"text": "Small ones",
+						"text": "Ensures cross-team dependencies are noted and well understood by all teams involved and other relevant stakeholders. Works across teams to foster a culture of priority setting and urgency in alignment with organizational strategy.",
 						"level": 2
 					},
 					{
-						"text": "Huge ones",
+						"text": "Identifies dependencies across the organization and works with individual teams to resolve them before they become an issue, and installs preventative measures to mitigate repeat occurrences. Works across the organization to foster a culture of priority setting and urgency in alignment with organizational strategy.",
+						"level": 3
+					}
+				]
+			},
+			{
+				"text": "Dealing with ambiguity",
+				"answers": [{
+						"text": "Effectively handles risk, change, and uncertainty within their team. Decides and acts responsibly in their work with their team without having the total picture during routine business, as well as when in high pressure situations.",
+						"level": 1
+					},
+					{
+						"text": "Effectively handles risk, change, and uncertainty across several teams. Decides and acts responsibly in their work across teams without having the total picture during routine business, as well as when in high pressure situations.",
+						"level": 2
+					},
+					{
+						"text": "Effectively handles risk, change, and uncertainty across the organization. Decides and acts responsibly in their work across the organization without having the total picture during routine business, as well as when in high pressure situations.",
 						"level": 3
 					}
 				]
 			}]
 		},
 		{
-			"name": "Communication",
+			"name": "Organization",
 			"questions": [{
-				"text": "How well do I communicate with the team - EM?",
+				"text": "Reliability, delivery accountability",
 				"answers": [{
-						"text": "People listen to me",
+						"text": "Anticipates and communicates blockers, delays, and cost ballooning within their team’s projects, before they require escalation. Ensures expectations with their team and external stakeholders are clarified between all parties involved. ",
 						"level": 1
 					},
 					{
-						"text": "People hear me",
+						"text": "Successfully manages cross-team commitments, their progress, and roadmap to delivery. Anticipates and communicates blockers, delays, and cost ballooning across teams, before they require escalation. Ensures expectations across teams and stakeholders are clarified between all parties involved. ",
 						"level": 2
 					},
 					{
-						"text": "People understand me",
+						"text": "Successfully manages organization-wide commitments, their progress, and roadmap to delivery. Ensures expectations across the organization and external stakeholders are clarified between all parties involved. ",
+						"level": 3
+					}
+				]
+			},
+			{
+				"text": "Economic thinking",
+				"answers": [{
+						"text": "When taking action, weighs cost and value in order to take the most economic action. Uses this thinking in their own work, and to foster a culture within their team where people apply economic thinking to make timely decisions.",
+						"level": 1
+					},
+					{
+						"text": "When taking action, weighs cost and value in order to make the most economic action. Uses this thinking in their own work, and to foster a culture across several teams where people apply economic thinking to make timely decisions. ",
+						"level": 2
+					},
+					{
+						"text": "When taking action, weighs cost and value in order to make the most economic action. Uses this thinking in their own work, and to foster a culture within the organization where people apply economic thinking to make timely decisions. ",
+						"level": 3
+					}
+				]
+			}]
+		},
+		{
+			"name": "Feedback",
+			"questions": [{
+				"text": "Delivering Feedback ",
+				"answers": [{
+						"text": "Fosters a culture of delivering praise and constructive feedback within their team and team's respective business stakeholders. Actively demonstrates these behaviours. ",
+						"level": 1
+					},
+					{
+						"text": "Fosters a culture of delivering praise and constructive feedback across several teams as well as their respective business stakeholders. Actively demonstrates these behaviours. ",
+						"level": 2
+					},
+					{
+						"text": "Fosters a culture of delivering praise and constructive feedback across the organization. Actively demonstrates these behaviours. ",
+						"level": 3
+					}
+				]
+			},
+			{
+				"text": "Effective communication",
+				"answers": [{
+						"text": "Is able to communicate effectively with a diverse team. Fosters a culture of clear, concise, effective, audience-oriented communication on their team, ensuring teammates actively listen to others and are understood. Pays attention to nonverbal communication.  ",
+						"level": 1
+					},
+					{
+						"text": "Is able to communicate effectively with a diverse set of teams. Fosters a culture of clear, concise, effective, audience-oriented communication across several teams, ensuring teammates actively listen to others and are understood. Pays attention to nonverbal communication. ",
+						"level": 2
+					},
+					{
+						"text": "Is able to communicate effectively across the company. Fosters a culture of clear, concise, effective, audience-oriented communication across the company, ensuring teammates actively listen to others and are understood. Pays attention to nonverbal communication. ",
+						"level": 3
+					}
+				]
+			}]
+		},
+		{
+			"name": "Collaboration",
+			"questions": [{
+				"text": "Teamwork",
+				"answers": [{
+						"text": "Consistently helps their teammates overcome obstacles, resolve blockers, and complete work tasks. Gives or shares credit where due.",
+						"level": 1
+					},
+					{
+						"text": "Consistently works across teams to help them resolve blockers, and complete work tasks. Ensures that credit is shared and given where due. ",
+						"level": 2
+					},
+					{
+						"text": "Consistently works across the organization to enable teams to support each other. Ensures that credit is shared and given where due. ",
+						"level": 3
+					}
+				]
+			},
+			{
+				"text": "Relationship building",
+				"answers": [{
+						"text": "Works to build and improve strong relationships with their teammates, manager, their teams' relevant business stakeholders, and senior engineers across the organization. Leverages relationships to better plan for and position their team.",
+						"level": 1
+					},
+					{
+						"text": "Works to build and improve strong relationships with engineers and managers across the organization as well as relevant business stakeholders for several teams. Leverages relationships to better plan for and position those teams.",
+						"level": 2
+					},
+					{
+						"text": "Works to build and improve strong relationships across the organization. Leverages those relationships to better plan for and position the engineering organization.",
+						"level": 3
+					}
+				]
+			},
+			{
+				"text": "Handling disagreement",
+				"answers": [{
+						"text": "Fosters a culture within their team where people are encouraged to share their opinions and contribute to discussions in a respectful manner, approach disagreement non-defensively with inquisitiveness, and use contradictory opinions as a basis for constructive, productive conversations. Is open to changing their perspective and plans based on others' input. ",
+						"level": 1
+					},
+					{
+						"text": "Fosters a culture across several teams where people are encouraged to share their opinions and contribute to discussions in a respectful manner, approach disagreement non-defensively with inquisitiveness, and use contradictory opinions as a basis for constructive, productive conversations. Works through surface-level disagreements to expose the concerns of disagreeing voices and integrates these concerns into their perspective and plans.",
+						"level": 2
+					},
+					{
+						"text": "Fosters a culture across the organization where people are encouraged to share their opinions and contribute to discussions in a respectful manner, approach disagreement non-defensively with inquisitiveness, and use contradictory opinion as a basis for constructive, productive conversations. Integrates disagreeing perspectives from the whole company into their perspective and plans.",
+						"level": 3
+					}
+				]
+			}]
+		},
+		{
+			"name": "Culture Seeding",
+			"questions": [{
+				"text": "Decision making",
+				"answers": [{
+						"text": "Takes ownership of decisions made in their team by helping their teammates make clear decisions in alignment with organizational goals, backing decisions made, and taking responsibility for their success. Raises awareness for how biases impact decisions and ensures accountability is practiced within their team. Demonstrates these behaviours themselves.",
+						"level": 1
+					},
+					{
+						"text": "Takes ownership of decisions made across teams by helping them make clear decisions in alignment with organizational goals, backing decisions made, and taking responsibility for their success. Raises awareness for how biases impact decisions and ensures accountability is practiced throughout those teams. Demonstrates these behaviours themselves.",
+						"level": 2
+					},
+					{
+						"text": "FTakes ownership of decisions made in the engineering organization by helping organization members make clear decisions in alignment with organizational goals, backing decisions made, and taking responsibility for their success. Raises awareness for how biases impact decisions and ensures accountability is practiced throughout the organization. Demonstrates these behaviours themselves.",
+						"level": 3
+					}
+				]
+			},
+			{
+				"text": "Process iteration",
+				"answers": [{
+						"text": "Thinks about team practices and processes and regularly discusses improvements with their team. Sometimes collaborates with others to improve organizational practices and processes.",
+						"level": 1
+					},
+					{
+						"text": "Thinks about practices and processes that affect several teams, discusses improvements with appropriate parties, and drives implemention. Usually collaborates with others to improve organizational practices and processes.",
+						"level": 2
+					},
+					{
+						"text": "Takes ownership and responsibility for organizational practices and processes and their continuous improvement.",
+						"level": 3
+					}
+				]
+			},
+			{
+				"text": "Discussion orchestration",
+				"answers": [{
+						"text": "Can faciliate a group discussion on a topic with set agenda, deliverables, particpant engagement where all attendees are happy to contribute.",
+						"level": 1
+					},
+					{
+						"text": "Facilitates discussions across teams, ensuring that everyone has an opportunity to share their opinion and be heard, and that discussion outcomes tie to stated goals. Ensures relevant parties are included in discussions. Guides discussions toward decisions, clarifies and gets buy-in.",
+						"level": 2
+					},
+					{
+						"text": "Facilitates organization-wide discussions, ensuring that everyone has an opportunity to share their opinion and be heard, and that discussion outcomes tie to stated goals. Encourages quiet participants and ensures no one person dominates the conversation.",
+						"level": 3
+					}
+				]
+			}]
+		},
+		{
+			"name": "Mentoring",
+			"questions": [{
+				"text": "Mentoring",
+				"answers": [{
+						"text": "Mentors their teammates in an open, respectful, flexible, empathetic manner. Seeks out mentoring opportunities specifically to create team redundancy and backfill ability. Mentors members of other teams as needed. ",
+						"level": 1
+					},
+					{
+						"text": "Mentors across teams in an open, respectful, flexible, empathetic manner. Fosters a culture of mentoring across teams by seeking out mentoring opportunities for themselves and others, and supports others in their growth as mentors. ",
+						"level": 2
+					},
+					{
+						"text": "Mentors across the organization in an open, respectful, flexible, empathetic manner. Fosters an organizational culture of mentoring by seeking out mentoring opportunities for themselves and others, and supports others in their growth as mentors. ",
 						"level": 3
 					}
 				]
 			}]
 		}
-	]
+	],
+	"levels": [{
+		"level_name": "Engineering Manager",
+		"mean_score": 1
+	},
+	{
+		"level_name": "Senior Engineering Manager",
+		"mean_score": 2
+	},
+	{
+		"level_name": "Principle Engineering Manager",
+		"mean_score": 3
+	}
+]
 }

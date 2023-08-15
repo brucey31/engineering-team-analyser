@@ -46,10 +46,7 @@ export default function Question() {
 
   return (
     <div style={{height: "200px"}}>
-        <p>
-          Questions
-        </p>
-        
+  
         {isLoaded === true ? 
           framework.topics.map(function(d, idx){
               return (

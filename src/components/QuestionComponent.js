@@ -6,7 +6,7 @@ import ButtonComponent from './ButtonComponent';
 
 
 export default function QuestionComponent(props) { 
-    const starting_point = 2
+    const starting_point = 1
     const [questionValue, setQuestionValue] = useState(starting_point);
 
     function button_press(){
@@ -17,7 +17,7 @@ export default function QuestionComponent(props) {
     if (props.questionIndex === props.index){
         return (
             <div>
-              <p>{props.text}</p>
+              <h3>{props.text}</h3>
               <QuestionSliderComponent
                 starting_point={starting_point}
                 answers={props.answers}

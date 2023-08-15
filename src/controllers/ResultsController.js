@@ -17,7 +17,8 @@ export function collect_result(topic, score, name, framework_id){
       "topics": [
           {
             "topic_name": topic,
-            "score": score
+            "score": score,
+            "num_questions_in_topics": 1
           }
         ]
       }
@@ -39,6 +40,7 @@ export function collect_result(topic, score, name, framework_id){
             if (result.topics[j].topic_name === topic){
               topic_already_exists = true
               result.topics[j].score += score
+              result.topics[j].num_questions_in_topics += 1
             }
           }
           // Creating new topic within testee name
@@ -46,7 +48,8 @@ export function collect_result(topic, score, name, framework_id){
             result.topics.push(
               {
                 "topic_name": topic,
-                "score": score
+                "score": score,
+                "num_questions_in_topics": 1
               }
             )
           }
@@ -93,7 +96,7 @@ export function get_results_for_framework(dataset_template, chart_colours, frame
           if (i === 0){
             chart_data.labels.push(topic.topic_name)
           }
-          new_dataset.data.push(topic.score)
+          new_dataset.data.push(Math.round(topic.score / topic.num_questions_in_topics))
         }
         chart_data.datasets.push(new_dataset)
       }
@@ -117,16 +120,17 @@ export function get_green_red_results(name, framework_id, effectFunction){
       // Name matches who the page was made for
       if (result.name === name){
         var score_sum = 0
+        var num_questions_sum = 0
         var mean = 0
         var current_level = ""
         var green_topics = []
         var red_topics = []
         // Looping through to create the total score
         for (let j = 0; j < result.topics.length; j++){
-          var count = j
           score_sum += result.topics[j].score
+          num_questions_sum +=  result.topics[j].num_questions_in_topics
         }
-        mean = Math.floor(score_sum/(count + 1));
+        mean = Math.floor(score_sum/num_questions_sum);
         // Get current level from framework
         for (let s = 0; s < framework.levels.length; s++){
           if (framework.levels[s].mean_score === mean){

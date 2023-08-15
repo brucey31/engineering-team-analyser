@@ -2,65 +2,219 @@
 	"id": "f1ac5916-6e1f-4876-8b8e-4dc4b8a23716",
 	"name": "Software Engineering Framework",
 	"topics": [{
-			"name": "Testing",
+			"name": "Quality & Testing",
 			"questions": [{
-				"text": "What would you describe your level of automated testing? _EM1",
-				"answers": [{
-						"text": "I can hold it!!",
-						"level": 1
-					},
-					{
-						"text": "I can boss it!!",
-						"level": 2
-					},
-					{
-						"text": "I nail it!!",
-						"level": 3
-					}
-				]
-			}]
+					"text": "Writing code",
+					"answers": [{
+							"text": "Writes code with testability, readability, edge cases, and errors in mind.",
+							"level": 1
+						},
+						{
+							"text": "Consistently writes functions that are easily testable, easily understood by other developers, and accounts for edge cases and errors. Uses docstrings effectively.",
+							"level": 2
+						},
+						{
+							"text": "Consistently writes production-ready code that is easily testable, easily understood by other developers, and accounts for edge cases and errors. Understands when it is appropriate to leave comments, but biases towards self-documenting code.",
+							"level": 3
+						}
+					]
+				},
+				{
+					"text": "Testing",
+					"answers": [{
+							"text": "Knows the testing pyramid. Writes unit tests, sometimes with help from more senior engineers.",
+							"level": 1
+						},
+						{
+							"text": "Understands the testing pyramid, writes unit tests in accordance with it, as well as higher level tests with help from more senior engineers. Always tests expected edge cases and errors as well as the happy path.",
+							"level": 2
+						},
+						{
+							"text": "Understands the testing pyramid, and writes unit tests as well as higher level tests in accordance with it. Always writes tests to handle expected edge cases and errors gracefully, as well as happy paths.",
+							"level": 3
+						},
+						{
+							"text": "Understands their team's testing approach, and uses quality metrics to identify gaps. Works with their team to recommend solutions that are in accordance with accepted testing frameworks and the testing pyramid.",
+							"level": 4
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Debugging & observability",
+			"questions": [{
+					"text": "Debugging",
+					"answers": [{
+							"text": "Understands the basics of debugging and the tools used for it. ",
+							"level": 1
+						},
+						{
+							"text": "Uses a systematic approach to debug issues located within a single service. ",
+							"level": 2
+						},
+						{
+							"text": "Proficient at using systematic debugging to diagnose all issues located to a single service. Uses systematic debugging to diagnose cross service issues, sometimes with help from more senior engineers.",
+							"level": 3
+						},
+						{
+							"text": "Proficient at using systematic debugging to diagnose all issues within the scope of their domain.",
+							"level": 4
+						}
+					]
+				},
+				{
+					"text": "Observability",
+					"answers": [{
+							"text": "Is aware of the organization's monitoring philosophy and the operational data for their team’s domain.",
+							"level": 2
+						},
+						{
+							"text": "Is aware of the organization's monitoring philosophy. Helps tune and change the monitoring on their team accordingly. Is aware of the operational data for their team’s domain and uses it as a basis for suggesting stability and performance improvements.",
+							"level": 3
+						},
+						{
+							"text": "Drives monitoring work on their team based on the organization's monitoring philosophy. Is aware of the operational data for their team’s domain and uses it as a basis for driving changes to the team's services to achieve stability and performance improvements.",
+							"level": 4
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Software design & architecture",
+			"questions": [{
+					"text": "Understanding Code",
+					"answers": [{
+							"text": "Is able to gain context within team's domain with help from more senior engineers.",
+							"level": 1
+						},
+						{
+							"text": "Understands a portion of the team's domain, can gain sufficient context to work productively in that portion.",
+							"level": 2
+						},
+						{
+							"text": "Understands their team's domain at a high level and can gather sufficient context to work productively within it. Has expertise in a portion of their team's domain. ",
+							"level": 3
+						},
+						{
+							"text": "Has expertise in their team's domain, including the breadth of services, how they interact, and data flows between systems. Understands adjacent domains as they affect their team.",
+							"level": 4
+						}
+					]
+				},
+				{
+					"text": "Software Architecture",
+					"answers": [{
+							"text": "Is aware of overall service architecture. Designs basic functions with an awareness of overall service architecture, avoiding duplication across codebases and interface-breaking changes.",
+							"level": 1
+						},
+						{
+							"text": "Designs functions that are aligned with the overall service architecture.",
+							"level": 2
+						},
+						{
+							"text": "Consistently designs code that is aligned with the overall service architecture. Utilizes abstractions and code isolation effectively.",
+							"level": 3
+						},
+						{
+							"text": "Architects services and systems using well accepted design patterns to allow for iterative, autonomous development and future scaling. Anticipates future use cases and makes design decisions that minimize the cost of future changes. ",
+							"level": 4
+						}
+					]
+				}
+			]
 		},
 		{
 			"name": "Communication",
 			"questions": [{
-				"text": "How well do I communicate with the team? _EM1",
-				"answers": [{
-						"text": "People listen to me",
-						"level": 1
-					},
-					{
-						"text": "People hear me",
-						"level": 2
-					},
-					{
-						"text": "People understand me",
-						"level": 3
-					}
-				]
-			}]
+					"text": "Effective communication",
+					"answers": [{
+							"text": "Communicates effectively, clearly, concisely and in an audience-oriented way, in written and verbal form. Actively listens to others and ensures they are understood. Pays attention to nonverbal communication.",
+							"level": 1
+						},
+						{
+							"text": "Usually communicates effectively, clearly, concisely and in an audience-oriented way in written and verbal form both technical and non technical subjects, to their teammates. Actively listens to others and ensures they are understood. Pays attention to nonverbal communication. ",
+							"level": 2
+						},
+						{
+							"text": "Communicates effectively, clearly, concisely in written and verbal form both technical and non technical subjects, and in an audience-oriented way. Actively listens to others and ensures they are understood. Pays attention to nonverbal communication. ",
+							"level": 3
+						},
+						{
+							"text": "Is able to communicate effectively with a diverse team. Fosters a culture of clear, concise, effective, audience-oriented communication on their team, ensuring teammates actively listen to others and are understood. Actively demonstrates these behaviours. Pays attention to nonverbal communication.",
+							"level": 4
+						}
+					]
+				},
+				{
+					"text": "Knowledge Sharing",
+					"answers": [{
+							"text": "Understands their area of work and shares their knowledge frequently with their teammates.",
+							"level": 1
+						},
+						{
+							"text": "Understands their work domain, shares their knowledge frequently with their teammates and contributes to their team's documentation. Watches out for opportunities to share knowledge.",
+							"level": 2
+						},
+						{
+							"text": "Understands their team's domain, shares their knowledge frequently with their teammates and contributes to their team's documentation. Watches out for opportunities to share knowledge and encourages others to do the same.",
+							"level": 3
+						},
+						{
+							"text": "Fosters a culture of documentation and knowledge sharing within their team and with their team's business stakeholders; actively demonstrates these behaviors.",
+							"level": 4
+						}
+					]
+				}
+			]
 		},
 		{
-			"name": "PR skills",
+			"name": "Collaboration",
 			"questions": [{
-				"text": "How good is the feedback I give in peer reviews? _EM1",
-				"answers": [{
-						"text": "Not bad",
-						"level": 1
-					},
-					{
-						"text": "Good",
-						"level": 2
-					},
-					{
-						"text": "Fantastic",
-						"level": 3
-					}
-				]
-			}]
+					"text": "Teamwork",
+					"answers": [{
+							"text": "Helps their teammates when requested. Gives or shares credit where due.",
+							"level": 1
+						},
+						{
+							"text": "When requested, helps their teammates overcome obstacles, resolve blockers, and complete work tasks. Gives or shares credit where due.",
+							"level": 2
+						},
+						{
+							"text": "Sometimes helps their teammates overcome obstacles, resolve blockers, and complete work tasks. Gives or shares credit where due.",
+							"level": 3
+						},
+						{
+							"text": "Consistently helps their teammates overcome obstacles, resolve blockers, and complete work tasks. Gives or shares credit where due.",
+							"level": 4
+						}
+					]
+				},
+				{
+					"text": "Relationship building",
+					"answers": [{
+							"text": "Understands their area of work and shares their knowledge frequently with their teammates.",
+							"level": 1
+						},
+						{
+							"text": "Understands their work domain, shares their knowledge frequently with their teammates and contributes to their team's documentation. Watches out for opportunities to share knowledge.",
+							"level": 2
+						},
+						{
+							"text": "Understands their team's domain, shares their knowledge frequently with their teammates and contributes to their team's documentation. Watches out for opportunities to share knowledge and encourages others to do the same.",
+							"level": 3
+						},
+						{
+							"text": "Fosters a culture of documentation and knowledge sharing within their team and with their team's business stakeholders; actively demonstrates these behaviors.",
+							"level": 4
+						}
+					]
+				}
+			]
 		}
 	],
-	"levels": [
-		{
+	"levels": [{
 			"level_name": "SE I",
 			"mean_score": 1
 		},
@@ -71,6 +225,10 @@
 		{
 			"level_name": "SE III",
 			"mean_score": 3
+		},
+		{
+			"level_name": "Senior Software Engineer",
+			"mean_score": 4
 		}
 	]
 }

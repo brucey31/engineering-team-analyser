@@ -28,7 +28,7 @@ export default function Frameworks() {
     }
 
   return (
-    <div>
+    <div className="framework_selection_container">
       <TextField 
         required
         id="name_text" 

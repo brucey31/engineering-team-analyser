@@ -20,7 +20,7 @@ export default function TopicQuestionComponent(props) {
     return (
       <div>
         
-        <p>{props.topic.name}</p>
+        <h1>{props.topic.name}</h1>
         {
           props.topic.questions.map(function(d, idx){
             return (
@@ -32,7 +32,7 @@ export default function TopicQuestionComponent(props) {
                 answers={d.answers}
                 text={d.text}
                 name={props.name}
-                framework_id={props.TopicQuestionComponentframeworkID}
+                framework_id={props.framework_id}
                 score_callback={props.score_callback}
                 question_callback={next_question}
               />

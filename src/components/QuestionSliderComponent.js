@@ -1,23 +1,28 @@
+import React, { useState } from 'react';
 import '../style/App.css';
 
 import Slider from '@mui/material/Slider';
+import QuestionSliderInfoBoxComponent from "./QuestionSliderInfoBox"
 
-function valuetext(index, answers, effectFunction) {
+function valuetext(index, answers, parentEffectFunction, effectFunction) {
   if(index -1 > answers.length){
     return "N/A"
   }
   else{
-    effectFunction(index)
-    return answers[index-1].text
+    parentEffectFunction(index)
+    effectFunction(answers[index-1].text)
+    return index
   }
 }
 
-export default function QuestionSliderComponent(props) {    
+export default function QuestionSliderComponent(props) {  
+  const [helpText, setHelpText] = useState(null);
+  
   return (
-    <div class="slider_container">
+    <div className="slider_container">
       <Slider
           defaultValue={props.starting_point}
-          valueLabelFormat={value => valuetext(value, props.answers, props.effectFunction)}
+          valueLabelFormat={value => valuetext(value, props.answers, props.effectFunction, setHelpText)}
           aria-hidden="false"
           valueLabelDisplay="on"
           step={1}
@@ -31,6 +36,7 @@ export default function QuestionSliderComponent(props) {
             },
           }}
       />
+      <QuestionSliderInfoBoxComponent info_text={helpText} />
     </div>
   );
 }

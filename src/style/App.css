@@ -1,5 +1,11 @@
+@font-face {
+  font-family: questa-sans-regular;
+  src: url(../../public/questa-sans-regular.otf);
+}
+
 .App {
   text-align: center;
+  font-family: questa-sans-regular;
 }
 
 .main_body{
@@ -8,7 +14,7 @@
 
 .App-header {
   min-height: 10vh;
-  background-color: rgb(101, 224, 200);
+  background-color: #9eebdc;
   box-shadow: (0, 4px, 8px, "#488d7f3");
   display: flex;
   padding: 20px;
@@ -20,6 +26,10 @@
 }
 .esgbook-logo{
   width: 200px; 
+}
+
+.framework_selection_container{
+  margin-top: 50px;
 }
 
 .button_selector{
@@ -47,6 +57,98 @@
 .slider_container{
   padding: 2%;
   display: flex;
+  flex-direction: column;
   padding-left: 20%;
   padding-right: 20%;
+}
+
+.MuiSlider-thumb:not(.MuiSlider-active) {
+  transition: left 0.3s ease-in;
+}
+
+.MuiSlider-track {
+  transition: width 0.3s ease-in;
+}
+
+.question_info_text_container{
+  min-height: 10vh;
+}
+
+.level_suggestions_container{
+  text-align: left;
+}
+
+.question-info-text{
+  -webkit-animation: fadeInFromNone 1s ease-out;
+  -moz-animation: fadeInFromNone 1s ease-out;
+  -o-animation: fadeInFromNone 1s ease-out;
+  animation: fadeInFromNone 1s ease-out;
+}
+
+@-webkit-keyframes fadeInFromNone {
+  0% {
+      display: none;
+      opacity: 0;
+  }
+
+  1% {
+      display: block;
+      opacity: 0;
+  }
+
+  100% {
+      display: block;
+      opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeInFromNone {
+  0% {
+      display: none;
+      opacity: 0;
+  }
+
+  1% {
+      display: block;
+      opacity: 0;
+  }
+
+  100% {
+      display: block;
+      opacity: 1;
+  }
+}
+
+@-o-keyframes fadeInFromNone {
+  0% {
+      display: none;
+      opacity: 0;
+  }
+
+  1% {
+      display: block;
+      opacity: 0;
+  }
+
+  100% {
+      display: block;
+      opacity: 1;
+  }
+}
+
+@keyframes fadeInFromNone {
+  0% {
+      display: none;
+      opacity: 0;
+  }
+
+  1% {
+      display: block;
+      opacity: 0;
+  }
+
+  100% {
+      display: block;
+      opacity: 1;
+  }
 }
