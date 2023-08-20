@@ -50,7 +50,7 @@ jobs:
         with:
           image: ${{ env.IMAGE_NAME }}
           region: europe-west2
-          service: app
+          service: engineering-team-analyser
           flags: --port=80
 
       # Example of using the output
