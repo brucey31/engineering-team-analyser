@@ -1,8 +1,10 @@
 import '../style/App.css';
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from "react-router-dom"
 
 import RadarChartComponent from '../components/RadarChartComponent';
 import LevelSuggestedionsImprovementsComponent from "../components/LevelSuggestionsImprovementsComponent"
+import ButtonComponent from "../components/ButtonComponent"
 
 import {get_url_params} from "../controllers/FrameworkController"
 import {get_results_for_framework, get_green_red_results} from "../controllers/ResultsController"
@@ -27,8 +29,14 @@ const dataset_template = {
 };
 
 export default function Result() {
+  const navigate = useNavigate();
   const [chartResults, setChartResults] = useState({"labels": [], datasets:[]});
   const [greenRedResults, setGreenRedResults] = useState({});
+
+  function go_back_to_framework_selection(){
+    let redirect_url = "/"
+    navigate(redirect_url)
+  }
 
   useEffect(() => {
     let frameworkid = get_url_params("framework_id")
@@ -39,13 +47,21 @@ export default function Result() {
   }, []);
 
   return (
-    <div className="results_container">
-        <div className="results_sub_container"> 
-          <RadarChartComponent chart_data={chartResults} />
+    <div>
+      <div className="results_container">
+          <div className="results_sub_container"> 
+            <RadarChartComponent chart_data={chartResults} />
+          </div>
+          <div className="results_sub_container">
+            <LevelSuggestedionsImprovementsComponent results={greenRedResults} />
+          </div>
         </div>
-        <div className="results_sub_container">
-          <LevelSuggestedionsImprovementsComponent results={greenRedResults} />
-        </div>
+      <div>
+        <ButtonComponent
+          onClick={go_back_to_framework_selection}
+          text={"Add another engineer"}
+        />
+      </div>
     </div>
   );
 }

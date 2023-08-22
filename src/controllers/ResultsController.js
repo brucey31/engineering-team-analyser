@@ -31,8 +31,8 @@ export function collect_result(topic, score, name, framework_id){
       var testee_found = false
       for (let i = 0; i < framework_results.length; i++) {
         let result = framework_results[i]
-        // existing testee name found
-        if (result.name === name){
+        // existing testee name found for the framework
+        if (result.name === name & result.framework_id === framework_id){
           testee_found = true
           var topic_already_exists = false
           for (let j = 0; j < result.topics.length; j++) {
@@ -139,10 +139,11 @@ export function get_green_red_results(name, framework_id, effectFunction){
         }
         // Looping through to get green & red topics
         for (let gr = 0; gr < result.topics.length; gr++ ){
-          if(result.topics[gr].score < mean){
+          let topic_mean = Math.round(result.topics[gr].score / result.topics[gr].num_questions_in_topics)
+          if(topic_mean < mean){
             red_topics.push(result.topics[gr].topic_name)
           }
-          else if(result.topics[gr].score > mean){
+          else if(topic_mean > mean){
             green_topics.push(result.topics[gr].topic_name)
           }
         }
