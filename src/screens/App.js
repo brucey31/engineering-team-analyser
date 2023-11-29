@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src="https://app.esgbook.com/assets/logos/esgbook_logo.png" alt="logo" className="esgbook-logo" />
+        <img src="https://blog.9fin.com/images/logo_hu44508be6a7b00260df926a79e3f86045_4609_0x70_resize_lanczos_2.png" alt="logo" className="logo" />
       </header>
 
       <div className="main_body">

@@ -30,9 +30,9 @@ export default function QuestionSliderComponent(props) {
           max={props.answers.length}
           marks={true}
           sx={{
-            color: "rgba(101, 224, 200, 0.5)",
+            color: "rgba(0, 142, 250, 0.5)",
             '& .MuiSlider-thumb': {
-              color: "rgba(101, 224, 200, 1)",
+              color: "rgba(0, 142, 250, 1)",
             },
           }}
       />

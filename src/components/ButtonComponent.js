@@ -6,11 +6,11 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 export default function ButtonComponent(props) {  
   const theme = createTheme({
     palette: {
-        esgbook: {
-            main: '#65E0C8',
-            light: '#7FFAE2',
-            dark: '#32AD95',
-            contrastText: '#006149',
+        buttonStyle: {
+            main: '#008efa',
+            light: '#66bbfc',
+            dark: '#0080e1',
+            contrastText: '#FFFFFF',
          },
         },
     });  
@@ -19,7 +19,7 @@ export default function ButtonComponent(props) {
     <ThemeProvider theme={theme}>
         <Button 
             variant="contained"
-            color="esgbook"
+            color="buttonStyle"
             onClick={() => {
             props.onClick()
             }}
